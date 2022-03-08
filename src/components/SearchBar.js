@@ -12,7 +12,11 @@ function SearchBar({placeholder, data}){
 		const newFilter = data.filter((value) => {
 			return value.grapeName.toLowerCase().includes(searchWord.toLowerCase());
 		});
+		if (searchWord === "") {
+			setFilteredData([]);
+		} else {
 		setFilteredData(newFilter);  
+		}
 	};
 
   return (
