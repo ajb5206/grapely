@@ -28,7 +28,7 @@ function SearchBar({placeholder, data}){
 			{filteredData.length !== 0 && (
 			<div className="dataResult">
 				{filteredData.map((value, key) => {
-					return <div className="searchResults"> {value.grapeName}</div> // maybe customize tag or use a tag for clickable? <a grapeName="dataItem" href={value.COMPONENT?} target="_blank">
+					return <div className="searchResults"> {value.grapeName}</div> // maybe customize tag or use a tag to link to reusable form? <a grapeName="dataItem" href={value.COMPONENT?} target="_blank">
 				})}
 			</div>
 			)}
