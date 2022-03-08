@@ -1,9 +1,11 @@
 import React from 'react'
 
-export default function WineList() {
+function WineList() {
 	return (
-		<div>WineList
-			
+		<div>
+
 		</div>
 	)
 }
+
+export default WineList;
