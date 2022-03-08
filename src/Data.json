@@ -10,5 +10,71 @@
 		"notableRegions": "Bordeaux, Napa Valley",
 		"tannins": "Heavy",
 		"flavorProfile": "Vegetal, bell pepper, black pepper, Jam"
+	},
+	{
+		"grapeName": "Merlot",
+		"notableRegions": "Bordeaux, Napa Valley",
+		"tannins": "Heavy",
+		"flavorProfile": "Vegetal, bell pepper, black pepper, Jam"
+	},
+	{
+		"grapeName": "Chardonnay",
+		"notableRegions": "Bordeaux, Napa Valley",
+		"tannins": "Heavy",
+		"flavorProfile": "Vegetal, bell pepper, black pepper, Jam"
+	},
+	{
+		"grapeName": "Sauvignon Blanc",
+		"notableRegions": "Bordeaux, Napa Valley",
+		"tannins": "Heavy",
+		"flavorProfile": "Vegetal, bell pepper, black pepper, Jam"
+	},
+	{
+		"grapeName": "Riesling",
+		"notableRegions": "Bordeaux, Napa Valley",
+		"tannins": "Heavy",
+		"flavorProfile": "Vegetal, bell pepper, black pepper, Jam"
+	},
+	{
+		"grapeName": "Grenache",
+		"notableRegions": "Bordeaux, Napa Valley",
+		"tannins": "Heavy",
+		"flavorProfile": "Vegetal, bell pepper, black pepper, Jam"
+	},
+	{
+		"grapeName": "Syrah",
+		"notableRegions": "Bordeaux, Napa Valley",
+		"tannins": "Heavy",
+		"flavorProfile": "Vegetal, bell pepper, black pepper, Jam"
+	},
+	{
+		"grapeName": "Mourvedre",
+		"notableRegions": "Bordeaux, Napa Valley",
+		"tannins": "Heavy",
+		"flavorProfile": "Vegetal, bell pepper, black pepper, Jam"
+	},
+	{
+		"grapeName": "Malbec",
+		"notableRegions": "Bordeaux, Napa Valley",
+		"tannins": "Heavy",
+		"flavorProfile": "Vegetal, bell pepper, black pepper, Jam"
+	},
+	{
+		"grapeName": "Tempernillo",
+		"notableRegions": "Bordeaux, Napa Valley",
+		"tannins": "Heavy",
+		"flavorProfile": "Vegetal, bell pepper, black pepper, Jam"
+	},
+	{
+		"grapeName": "Nebbiolo",
+		"notableRegions": "Bordeaux, Napa Valley",
+		"tannins": "Heavy",
+		"flavorProfile": "Vegetal, bell pepper, black pepper, Jam"
+	},
+	{
+		"grapeName": "Gamay Noir",
+		"notableRegions": "Bordeaux, Napa Valley",
+		"tannins": "Heavy",
+		"flavorProfile": "Vegetal, bell pepper, black pepper, Jam"
 	}
 ]

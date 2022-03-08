@@ -1,4 +1,6 @@
 import React from "react";
+import "./SearchBar.css";
+
 
 function SearchBar({placeholder, data}){
   return (
@@ -8,7 +10,7 @@ function SearchBar({placeholder, data}){
 				</div>
 			<div className="dataResult">
 				{data.map((value, key) => {
-					return <div> {value.grapeName}</div> // maybe customize tag or use a tag for clickable?
+					return <div className="searchResults"> {value.grapeName}</div> // maybe customize tag or use a tag for clickable? <a grapeName="dataItem" href={value.COMPONENT?} target="_blank">
 				})}
 			</div>
     
