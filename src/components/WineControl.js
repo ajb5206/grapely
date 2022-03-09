@@ -1,4 +1,5 @@
 import NewWineForm from './NewWineForm';
+import EditWineForm from './EditWineForm';
 import React from 'react';
 import WineList from './WineList';
 import WineDetail from './WineDetail';
