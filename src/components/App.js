@@ -2,7 +2,8 @@ import Header from './Header';
 import '../App.css';
 import React from 'react';
 import SearchBar from './SearchBar';
-import GrapeData from "../Data.json"
+import GrapeData from "../Data.json";
+import WineControl from './WineControl';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <div className="App">
       <Header />
       <SearchBar placeholder="Enter a grape..." data={GrapeData} />
+      <WineControl />
       </div>
     </React.Fragment> 
   );

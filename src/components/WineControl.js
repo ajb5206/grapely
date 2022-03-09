@@ -1,5 +1,7 @@
+import NewWineForm from './NewWineForm';
 import React from 'react';
 import WineList from './WineList';
+import WineDetail from './WineDetail';
 
 
 class WineControl extends React.Component {
