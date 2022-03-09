@@ -12,10 +12,35 @@ class WineControl extends React.Component {
 		};
 	}
 
+	// handleClick = () => {
+	// 	if (this.state.selectedWine)
+	// }
+
 
 	render(){
 		let currentlyVisibleState = null;
 		let buttonText = null;
+
+		if (this.state.editing) {
+			currentlyVisibleState = <EditWineForm wine = {this.state.selectedWine} onEditWine = {this.handleEditingWineInList} />
+			buttonText = "Return to Wine List";
+		}
+		else if (this.state.selectedWine != null){
+			currentlyVisibleState = 
+			<WineDetail
+				wine={this.state.selectedWine}
+				onClickingDelete = {this.handleDeletingWine}
+				onClickingEdit = {this.handleEditClick} />;
+			buttonText = "Return to Wine List";
+		}
+		else if (this.props.formVisibleOnPage) {
+			currentlyVisibleState = <NewWineForm onNewWineCreation={this.handleAddingNewWineToList} />;
+			buttonText = "Return to Wine List";
+		}
+		else {
+			currentlyVisibleState = <WineList wineList onWineSelection={this.handleChangingSelectedWine} />;
+			buttonText = "Add Wine";
+		}
 
 		return (
 			<React.Fragment>
