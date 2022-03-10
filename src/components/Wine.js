@@ -9,7 +9,7 @@ function Wine(props) {
 				<h3>{props.name}</h3>	
 				<p>{props.region}</p>
 				<p>{props.varietals}</p>
-				{/* <p>{props.notes}</p> */}
+				<p>{props.notes}</p>
 				<hr />
 			</div>
 		</div>
