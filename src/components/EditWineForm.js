@@ -1,8 +1,12 @@
 import React from 'react';
 import ReusableForm from './ReusableForm';
+import PropTypes from "prop-types";
+import { useFirestore } from 'react-redux-firebase';
 
 
 function EditWineForm(props) {
+	const firestore = useFirestore();
+	const { wine } = props;
 
 	function handleEditWineFormSubmission(event) {
 		event.preventDefault();
@@ -13,6 +17,7 @@ function EditWineForm(props) {
 			varietals: event.target.varietals.value,
 			notes: event.target.notes.value
 		}
+		return firestore.update({collection: 'wines', doc: wine.id}, propertiesToUpdate)
 	}
 
 	return (
@@ -23,5 +28,10 @@ function EditWineForm(props) {
 		</React.Fragment>
 	);
 }
+
+EditWineForm.propTypes = {
+	wine: PropTypes.object,
+	onEditWine: PropTypes.func
+};
 
 export default EditWineForm;
