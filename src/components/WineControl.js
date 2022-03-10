@@ -3,6 +3,10 @@ import EditWineForm from './EditWineForm';
 import React from 'react';
 import WineList from './WineList';
 import WineDetail from './WineDetail';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import * as a from './../actions';
+import { withFirestore } from 'react-redux-firebase';
 
 
 class WineControl extends React.Component {
