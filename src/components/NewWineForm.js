@@ -1,5 +1,6 @@
 import React from 'react';
 import ReusableForm from './ReusableForm';
+import PropTypes from "prop-types";
 import { useFirestore } from 'react-redux-firebase';
 
 function NewWineForm(props){
@@ -16,7 +17,6 @@ function NewWineForm(props){
         region: event.target.region.value,
 				varietals: event.target.varietals.value, 
         notes: event.target.notes.value,
-        timeOpen: firestore.FieldValue.serverTimestamp()
       }
     );
 	}
@@ -29,5 +29,9 @@ function NewWineForm(props){
 		</React.Fragment>
 	);
 }
+
+NewWineForm.propTypes = {
+	onNewWineCreation: PropTypes.func
+};
 
 export default NewWineForm;
