@@ -5,6 +5,7 @@ import SearchBar from './SearchBar';
 import GrapeData from "../Data.json";
 import WineControl from './WineControl';
 import Signup from './Signup';
+import Login from './Login';
 import { Container } from 'react-bootstrap';
 import { AuthProvider } from '../contexts/AuthContext';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
@@ -23,7 +24,9 @@ function App() {
               <Router>
                 <AuthProvider>
                   <Routes>
+                    <Route exact path="/" element={<WineControl />} />
                     <Route path='/signup' element={<Signup />} />
+                    <Route path='/login' element={<Login />} />
                   </Routes>
                 </AuthProvider>
               </Router>
@@ -31,7 +34,7 @@ function App() {
         </Container>
 
       <SearchBar placeholder="Enter a grape..." data={GrapeData} />
-      <WineControl />
+      {/* <WineControl /> */}
       </div>
     </React.Fragment> 
   );
