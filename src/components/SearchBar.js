@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./SearchBar.css";
+import { Link } from 'react-router-dom';
 
 
 function SearchBar({placeholder, data}){
@@ -28,7 +29,8 @@ function SearchBar({placeholder, data}){
 			{filteredData.length !== 0 && (
 			<div className="dataResult">
 				{filteredData.map((value, key) => {
-					return <div className="searchResults"> {value.grapeName}</div> // maybe customize tag or use a tag to link to reusable form? <a grapeName="dataItem" href={value.COMPONENT?} target="_blank">
+					return <Link className="searchResults" to="/grape">{value.grapeName}</Link>
+					// return <div className="searchResults">{value.grapeName}</div> // maybe customize tag or use a tag to link to reusable form? <a grapeName="dataItem" href={value.COMPONENT?} target="_blank">
 				})}
 			</div>
 			)}

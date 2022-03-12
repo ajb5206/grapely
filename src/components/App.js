@@ -10,6 +10,7 @@ import { Container } from 'react-bootstrap';
 import { AuthProvider } from '../contexts/AuthContext';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import PrivateRoute from './PrivateRoute';
+import Grape from './Grape';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
                     <PrivateRoute exact path="/" element={<WineControl />} />
                     <Route path='/signup' element={<Signup />} />
                     <Route path='/login' element={<Login />} />
+                    <Route path='/grape' element={<Grape />} />
                   </Routes>
                 </AuthProvider>
               </Router>
