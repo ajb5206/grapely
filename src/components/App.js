@@ -34,7 +34,6 @@ function App() {
         </Container>
 
       <SearchBar placeholder="Enter a grape..." data={GrapeData} />
-      {/* <WineControl /> */}
       </div>
     </React.Fragment> 
   );

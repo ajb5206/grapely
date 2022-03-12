@@ -39,7 +39,7 @@ function WineList(props) {
 }
 
 WineList.propTypes = {
-	onTicketSelection: PropTypes.func
+	onWineSelection: PropTypes.func
 };
 
 export default WineList;

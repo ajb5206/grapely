@@ -19,7 +19,8 @@ function Wine(props) {
 Wine.propTypes = {
 	name: PropTypes.string,
 	region: PropTypes.string,
-	varietals: PropTypes.string
+	varietals: PropTypes.string,
+	notes: PropTypes.string
 }
 
 export default Wine;

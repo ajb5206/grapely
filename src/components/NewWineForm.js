@@ -11,7 +11,7 @@ function NewWineForm(props){
 		event.preventDefault();
 		props.onNewWineCreation();
 
-		return firestore.collection('wine').add(
+		return firestore.collection('wines').add(
       {
         name: event.target.name.value,
         region: event.target.region.value,

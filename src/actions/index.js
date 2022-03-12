@@ -9,14 +9,14 @@ export const toggleForm = () => ({
 	type: c.TOGGLE_FORM
 });
 
-export const addWine = (wine) => {
-	const { name, region, varietals, notes, id } = wine;
-	return{
-		type: c.ADD_WINE,
-		name: name,
-		region: region,
-		varietals: varietals,
-		notes: notes,
-		id: id,
-	};
-};
+// export const addWine = (wine) => {
+// 	const { name, region, varietals, notes, id } = wine;
+// 	return{
+// 		type: c.ADD_WINE,
+// 		name: name,
+// 		region: region,
+// 		varietals: varietals,
+// 		notes: notes,
+// 		id: id,
+// 	};
+// };
