@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Card } from 'react-bootstrap';
 
 
 function WineDetail(props){
@@ -7,14 +8,17 @@ function WineDetail(props){
 
   return (
     <React.Fragment>
-      <h1>Wine Details</h1>
-      <h3>{wine.name}</h3>
-      <p>{wine.region}</p>
-			<p>{wine.varietals}</p>
-			<p>{wine.notes}</p>
+			<Card>
+			<Card.Title>Wine Details</Card.Title>
+			<Card.Body>
+			<h5>{wine.name}</h5>
+      <p>Region: {wine.region}</p>
+			<p>Varietals: {wine.varietals}</p>
+			<p>Notes: {wine.notes}</p>
+			</Card.Body>
+			</Card>
 			<button onClick= {props.onClickingEdit }>Update Wine</button>
-			<button onClick={() => onClickingDelete(wine.id) }>Close Wine</button>
-      <hr/>
+			<button onClick={() => onClickingDelete(wine.id) }>Delete Wine</button>
     </React.Fragment>
   );
 }

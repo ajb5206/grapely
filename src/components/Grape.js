@@ -1,5 +1,6 @@
 import React from 'react';
-import { Card, Button } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 export default function Grape(props) {
 	return (
@@ -27,6 +28,7 @@ export default function Grape(props) {
 					{props.tastingNotes}
 				</Card.Body>
 			</Card>
+			<Link to="/login">Create an account to start tracking wines!</Link>
 		</div>
 	)
 }
