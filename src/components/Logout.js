@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { Button } from 'react-bootstrap';
+import { Button, Alert } from 'react-bootstrap';
 import { useAuth } from '../contexts/AuthContext';
 import { useHistory } from 'react-router-dom';
 
 function Logout() {
 	const [error, setError] = useState('');
-	const { currentUser, logout } = useAuth();
+	const { logout } = useAuth();
 	const history = useHistory;
 
 	async function handleLogout() {
@@ -21,6 +21,7 @@ function Logout() {
 
 	return (
 		<div>
+			{error && <Alert variant="danger">{error}</Alert>}
 			<Button variant="link" onClick={handleLogout}></Button>
 		</div>
 	)
