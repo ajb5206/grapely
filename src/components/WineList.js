@@ -3,8 +3,11 @@ import Wine from './Wine';
 import PropTypes from "prop-types";
 import { useSelector } from 'react-redux';
 import { useFirestoreConnect, isLoaded } from 'react-redux-firebase';
+import { useAuth } from '../contexts/AuthContext';
 
 function WineList(props) {
+
+	const { currentUser } = useAuth()
 
 		useFirestoreConnect([
 			{ collection: 'wines' }
@@ -15,6 +18,7 @@ function WineList(props) {
 		if (isLoaded(wines)) {
 			return (
 				<React.Fragment>
+					<h3>{currentUser.email}'s Tasting Journal</h3>
 					<hr/>
 					{wines.map((wine) => {
 						return <Wine 

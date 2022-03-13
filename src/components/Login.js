@@ -17,13 +17,12 @@ export default function Login() {
 		try {
 			setError('')
 			setLoading(true)
-		await login(emailRef.current.value, passwordRef.current.value)
-		navigate('/')
-	} catch {
-		setError('Failed to log in')
-	}
-
-	setLoading(false)
+			await login(emailRef.current.value, passwordRef.current.value)
+			navigate('/')
+		} catch {
+			setError('Failed to log in')
+		}
+		setLoading(false)
 	}
 
 	return (
@@ -38,7 +37,7 @@ export default function Login() {
 							<Form.Control type="email" ref={emailRef} required />
 						</Form.Group>
 						<Form.Group id="password">
-							<Form.Label>Passowrd</Form.Label>
+							<Form.Label>Password</Form.Label>
 							<Form.Control type="password" ref={passwordRef} required />
 						</Form.Group>
 						<Button disabled={loading} className="w-100" type="submit">

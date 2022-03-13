@@ -19,10 +19,10 @@ function App() {
     <React.Fragment>
       <div className="App">
       <Header />
-
+      <SearchBar placeholder="Enter a grape..." data={GrapeData} />
         <Container
           className="d-flex align-items-center justify-content-center"
-          style={{ minHeight: "100vh" }}>
+          style={{ minHeight: "90vh" }}>
             <div className="w-100" style={{ maxWidth: " 400px" }}>
               <Router>
                 <AuthProvider>
@@ -39,8 +39,6 @@ function App() {
               </Router>
             </div>
         </Container>
-
-      <SearchBar placeholder="Enter a grape..." data={GrapeData} />
       </div>
     </React.Fragment> 
   );

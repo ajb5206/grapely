@@ -17,7 +17,7 @@ function Logout() {
 			setError('')
 			setLoading(true)
 			await logout()
-			navigate("/")
+			navigate('/')
 		} catch {
 			setError("Failed to log out")
 		}
@@ -28,8 +28,6 @@ function Logout() {
 		<div>
 			<div>
 				{error && <Alert variant="danger">{error}</Alert>}
-				{/* <Button variant="link" onClick={handleLogout}></Button> */}
-				{/* <button onClick={handleLogout}></button> */}
 			</div>
 			<div className="w-100 text-center mt-2">
         <Button  disabled={loading} variant="link" onClick={handleLogout}>
