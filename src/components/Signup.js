@@ -52,7 +52,7 @@ export default function Signup() {
 						</Form.Group>
 						<Button disabled={loading} className="w-100" type="submit">
 							Sign Up
-							</Button>
+						</Button>
 					</Form>
 				</Card.Body>
 			</Card>

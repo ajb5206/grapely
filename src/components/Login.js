@@ -43,7 +43,7 @@ export default function Login() {
 						</Form.Group>
 						<Button disabled={loading} className="w-100" type="submit">
 							Log In
-							</Button>
+						</Button>
 					</Form>
 				</Card.Body>
 			</Card>
