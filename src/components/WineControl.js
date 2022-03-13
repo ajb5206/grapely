@@ -7,9 +7,10 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import * as a from './../actions';
 import { withFirestore } from 'react-redux-firebase';
-
+import { Link } from 'react-router-dom';
 
 class WineControl extends React.Component {
+
 
 	constructor(props) {
 		super(props);
@@ -96,6 +97,7 @@ class WineControl extends React.Component {
 			<React.Fragment>
 				{currentlyVisibleState}
 				<button onClick={this.handleClick}>{buttonText}</button>
+				<Link to="/logout">Log Out</Link>
 			</React.Fragment>
 		);
 	}

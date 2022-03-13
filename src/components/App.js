@@ -11,6 +11,7 @@ import { AuthProvider } from '../contexts/AuthContext';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import PrivateRoute from './PrivateRoute';
 import Grape from './Grape';
+import Logout from './Logout';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
                     <Route path='/signup' element={<Signup />} />
                     <Route path='/login' element={<Login />} />
                     <Route path='/grape' element={<Grape />} />
+                    <Route path='/logout' element={<Logout />} />
                   </Routes>
                 </AuthProvider>
               </Router>
