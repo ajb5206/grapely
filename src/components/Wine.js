@@ -1,15 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Card } from 'react-bootstrap';
 
 
 function Wine(props) {
 	return (
 		<div>
 			<div onClick = {() => props.whenWineClicked(props.id)}>
-				<h3>{props.name}</h3>	
-				<p>{props.region}</p>
-				<p>{props.varietals}</p>
-				<p>{props.notes}</p>
+				<Card>
+					<Card.Title>{props.name}</Card.Title>
+					<Card.Body>
+						<p>{props.region}</p>
+						<p>{props.varietals}</p>
+						<p>{props.notes}</p>
+					</Card.Body>
+				</Card>
 				<hr />
 			</div>
 		</div>
